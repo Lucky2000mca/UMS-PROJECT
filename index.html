@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Sri University</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: antiquewhite;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: lightcyan;
+            padding: 10px 20px;
+            color: brown;
+            font-weight: bold;
+            font-size: 1.5rem;
+            white-space: nowrap;
+        }
+
+        .logo {
+            height: 55px;
+            width: 55px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: greenyellow;
+            padding: 5px 0;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .nav div, .nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content {
+            height: 550px;
+            overflow: hidden;
+        }
+
+        .content img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                font-size: 1.2rem;
+            }
+
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav div, .nav a {
+                margin: 5px 0;
+            }
+        }
+
+        /* Scrolling effect */
+        .scroll {
+            display: flex;
+            overflow: hidden;
+            white-space: nowrap;
+            scroll-behavior: smooth;
+            gap: 20px;
+            font-size: 1.2rem;
+        }
+
+        .scroll-item {
+            display: inline-block;
+            padding: 0 20px;
+            color:blue;
+            align-items: center;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div style="display: flex; align-items: center;">
+            <img src="SSU-LOGO1-1-scaled.jpg" alt="SSU Logo" class="logo">
+            <div>Sri Sri University</div>
+        </div>
+        <div class="scroll">
+            <div class="scroll-item">Learn</div>
+            <div class="scroll-item">Lead</div>
+            <div class="scroll-item">Serve</div>
+        </div>
+    </div>
+    
+    <nav class="nav">
+        <div><a href="index.html">Home</a></div>
+        <div>Academic</div>
+        <div><a href="contactUs.html">Contact Us</a></div>
+        <div><a href="aboutUs.html">About Us</a></div>
+        <div><a href="login.html">Login</a></div>
+    </nav>
+    
+    <div class="content">
+        <img src="https://srisriuniversity.edu.in/wp-content/uploads/2021/05/DSC_0035-min-2048x1362.jpg" alt="Sri Sri University Campus">
+    </div>
+</body>
+</html>
